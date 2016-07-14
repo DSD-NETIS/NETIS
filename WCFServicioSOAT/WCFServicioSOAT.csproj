@@ -59,6 +59,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Impuesto_Vehicular.svc" />
     <Content Include="Papeleta.svc" />
     <Content Include="RecuperarContrasena.svc" />
     <Content Include="Web.config" />
@@ -68,6 +69,10 @@
     <Compile Include="Dominio\RecuperarContrasenaDominio.cs" />
     <Compile Include="Dominio\Sat.cs" />
     <Compile Include="Errores\RepetidoException.cs" />
+    <Compile Include="IImpuesto_Vehicular.cs" />
+    <Compile Include="Impuesto_Vehicular.svc.cs">
+      <DependentUpon>Impuesto_Vehicular.svc</DependentUpon>
+    </Compile>
     <Compile Include="IPapeleta.cs" />
     <Compile Include="IRecuperarContrasena.cs" />
     <Compile Include="Papeleta.svc.cs">
