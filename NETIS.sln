@@ -29,6 +29,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServicioSOAT", "WCFServicioSOAT\WCFServicioSOAT.csproj", "{75D430D0-7B31-4FCC-9CD7-DAA277F32D65}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetisTest", "NetisTest\NetisTest.csproj", "{E75E4751-FE79-4306-8BB1-720BFF8362AF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{75D430D0-7B31-4FCC-9CD7-DAA277F32D65} = {75D430D0-7B31-4FCC-9CD7-DAA277F32D65}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

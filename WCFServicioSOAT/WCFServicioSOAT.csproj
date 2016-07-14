@@ -59,15 +59,22 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Papeleta.svc" />
     <Content Include="RecuperarContrasena.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dominio\Papeletas.cs" />
     <Compile Include="Dominio\RecuperarContrasenaDominio.cs" />
     <Compile Include="Dominio\Sat.cs" />
     <Compile Include="Errores\RepetidoException.cs" />
+    <Compile Include="IPapeleta.cs" />
     <Compile Include="IRecuperarContrasena.cs" />
+    <Compile Include="Papeleta.svc.cs">
+      <DependentUpon>Papeleta.svc</DependentUpon>
+    </Compile>
     <Compile Include="Persistencia\Conexion.cs" />
+    <Compile Include="Persistencia\PapeletasDAO.cs" />
     <Compile Include="Persistencia\RecuperarContrasenaDAO.cs" />
     <Compile Include="Persistencia\SatDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

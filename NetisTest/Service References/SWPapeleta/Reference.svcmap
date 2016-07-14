@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e432327b-734d-4023-838f-c8269b13e42f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:14958/Papeleta.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Papeleta.xsd" MetadataType="Schema" ID="c2b147dd-3813-44d6-aac0-4de01820acf8" SourceId="1" SourceUrl="http://localhost:14958/Papeleta.svc?xsd=xsd0" />
+    <MetadataFile FileName="Papeleta1.xsd" MetadataType="Schema" ID="bb10c613-b193-48dd-8fde-4ec4ed3ce638" SourceId="1" SourceUrl="http://localhost:14958/Papeleta.svc?xsd=xsd1" />
+    <MetadataFile FileName="Papeleta2.xsd" MetadataType="Schema" ID="f0e3204c-820b-467c-b280-4a9415d53633" SourceId="1" SourceUrl="http://localhost:14958/Papeleta.svc?xsd=xsd2" />
+    <MetadataFile FileName="Papeleta.wsdl" MetadataType="Wsdl" ID="1a7c0189-72d1-4fc9-b166-aa4d7c5b0c9e" SourceId="1" SourceUrl="http://localhost:14958/Papeleta.svc?wsdl" />
+    <MetadataFile FileName="Papeleta.disco" MetadataType="Disco" ID="9a810056-7b2f-4cfc-86c1-c0622a46c740" SourceId="1" SourceUrl="http://localhost:14958/Papeleta.svc?disco" />
+    <MetadataFile FileName="Papeleta3.xsd" MetadataType="Schema" ID="443c4c12-4bcf-439b-870a-3b0ae7969867" SourceId="1" SourceUrl="http://localhost:14958/Papeleta.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

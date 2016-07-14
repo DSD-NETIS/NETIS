@@ -53,6 +53,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Service References\SWPapeleta\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\SWRecuperarContrasena\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -63,6 +68,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Service References\SWPapeleta\NetisTest.SWPapeleta.Papeletas.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SWPapeleta\Papeleta.wsdl" />
+    <None Include="Service References\SWPapeleta\Papeleta.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SWPapeleta\Papeleta1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SWPapeleta\Papeleta2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SWPapeleta\Papeleta3.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\SWRecuperarContrasena\RecuperarContrasena.wsdl" />
     <None Include="Service References\SWRecuperarContrasena\RecuperarContrasena.xsd">
       <SubType>Designer</SubType>
@@ -78,6 +99,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SWPapeleta\" />
     <WCFMetadataStorage Include="Service References\SWRecuperarContrasena\" />
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +113,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\SWRecuperarContrasena\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SWPapeleta\Papeleta.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SWPapeleta\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SWPapeleta\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SWPapeleta\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
