@@ -20,7 +20,7 @@
             </tr>
             
             <tr>
-                <td style="text-align:center"><asp:Button ID="btnEnviar" runat="server" Text="Enviar" OnClientClick="if(txtEmail.value == ''){ alert('Ingrese un correo valido'); return false; }  alert('Se envió los pasos a su correo.'); window.close();" /></td>
+                <td style="text-align:center"><asp:Button ID="btnEnviar" runat="server" Text="Enviar" OnClick="btnEnviar_Click" OnClientClick="if(txtEmail.value == ''){ alert('Ingrese un correo valido'); return false; }" /></td>
                 <td style="text-align:center"><asp:Button ID="btnIngresar" runat="server" Text="Cancelar" OnClientClick="window.close();" /></td>
             </tr>
             

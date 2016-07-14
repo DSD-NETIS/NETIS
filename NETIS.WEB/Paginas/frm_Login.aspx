@@ -29,7 +29,7 @@
                 <td style="text-align:center"><asp:Button ID="btnIngresar" runat="server" Text="Ingresar" OnClick="btnIngresar_Click" /></td>
             </tr>
             <tr>
-                <td style="text-align:center"> <a href="#" onclick="window.open('frm_RecuperarContrasena.aspx', 'newwindow', 'width=500, height=450'); return false;" >Rescuperar Contraseña</a> </td>
+                <td style="text-align:center"> <a href="#" onclick=" var date = new Date(); if(date.getHours() <= 8 || date.getHours() >= 22 ) { alert('Horario no disponible'); } else { window.open('frm_RecuperarContrasena.aspx', 'newwindow', 'width=500, height=450'); return false; } "  >Rescuperar Contraseña</a> </td>
             </tr>
         </tbody>
     </table>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCFServicioSOAT.RecuperarContrasena" CodeBehind="RecuperarContrasena.svc.cs" %>
