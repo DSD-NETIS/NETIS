@@ -24,7 +24,7 @@ namespace WCFServicioSOAT
                     new RepetidoException()
                     {
                         Codigo = "301",
-                        Descripcion = "La placa ingresada presenta papeletas vigentes"
+                        Descripcion = "La placa ingresada presenta papeletas vigentes."
                     }, new FaultReason("Error al intentar crear un SOAT"));
             }
             return papeletasDAO.ValidarPapeleta(placa);
