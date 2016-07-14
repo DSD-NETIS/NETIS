@@ -28,6 +28,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NETIS.WEB", "http://localho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServicioSOAT", "WCFServicioSOAT\WCFServicioSOAT.csproj", "{75D430D0-7B31-4FCC-9CD7-DAA277F32D65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetisTest", "NetisTest\NetisTest.csproj", "{E75E4751-FE79-4306-8BB1-720BFF8362AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 		{75D430D0-7B31-4FCC-9CD7-DAA277F32D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75D430D0-7B31-4FCC-9CD7-DAA277F32D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75D430D0-7B31-4FCC-9CD7-DAA277F32D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E75E4751-FE79-4306-8BB1-720BFF8362AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E75E4751-FE79-4306-8BB1-720BFF8362AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E75E4751-FE79-4306-8BB1-720BFF8362AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E75E4751-FE79-4306-8BB1-720BFF8362AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

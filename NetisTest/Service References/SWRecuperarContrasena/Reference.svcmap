@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a2928c3a-136b-4c43-89cf-6b3746f25365" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:14958/RecuperarContrasena.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RecuperarContrasena.xsd" MetadataType="Schema" ID="0a83e2f2-e229-4d3a-a39d-c2286baec054" SourceId="1" SourceUrl="http://localhost:14958/RecuperarContrasena.svc?xsd=xsd0" />
+    <MetadataFile FileName="RecuperarContrasena.wsdl" MetadataType="Wsdl" ID="ebf35e9c-72cc-4755-96e8-bf3d08a0f16d" SourceId="1" SourceUrl="http://localhost:14958/RecuperarContrasena.svc?wsdl" />
+    <MetadataFile FileName="RecuperarContrasena1.xsd" MetadataType="Schema" ID="80c1d23d-3fc0-41d3-82eb-b93090d0bcf6" SourceId="1" SourceUrl="http://localhost:14958/RecuperarContrasena.svc?xsd=xsd2" />
+    <MetadataFile FileName="RecuperarContrasena.disco" MetadataType="Disco" ID="cd4a95c2-46ea-4949-8c15-f22a53b1a37e" SourceId="1" SourceUrl="http://localhost:14958/RecuperarContrasena.svc?disco" />
+    <MetadataFile FileName="RecuperarContrasena2.xsd" MetadataType="Schema" ID="9ea56cff-8f3f-4488-b36d-c9a6e651542f" SourceId="1" SourceUrl="http://localhost:14958/RecuperarContrasena.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

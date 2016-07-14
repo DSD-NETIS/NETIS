@@ -1,0 +1,6 @@
+C:\Users\EDER\Desktop\NETIS\NetisTest\bin\Debug\NetisTest.dll.config
+C:\Users\EDER\Desktop\NETIS\NetisTest\bin\Debug\NetisTest.dll
+C:\Users\EDER\Desktop\NETIS\NetisTest\bin\Debug\NetisTest.pdb
+C:\Users\EDER\Desktop\NETIS\NetisTest\obj\Debug\NetisTest.csprojResolveAssemblyReference.cache
+C:\Users\EDER\Desktop\NETIS\NetisTest\obj\Debug\NetisTest.dll
+C:\Users\EDER\Desktop\NETIS\NetisTest\obj\Debug\NetisTest.pdb
