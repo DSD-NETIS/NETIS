@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCF_SAT_Impuesto_Vehicular.Impuesto_Vehicular" CodeBehind="Impuesto_Vehicular.svc.cs" %>
