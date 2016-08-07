@@ -17,17 +17,43 @@
   <wsdl:message name="ISWSoap_CrearUsuario_RepetidoExceptionFault_FaultMessage">
     <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WCFServicioSOAT.Errores" name="detail" element="q1:RepetidoException" />
   </wsdl:message>
+  <wsdl:message name="ISWSoap_CrearSoat_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearSoat" />
+  </wsdl:message>
+  <wsdl:message name="ISWSoap_CrearSoat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearSoatResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWSoap_CrearSoat_RepetidoExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/WCFServicioSOAT.Errores" name="detail" element="q2:RepetidoException" />
+  </wsdl:message>
   <wsdl:portType name="ISWSoap">
     <wsdl:operation name="CrearUsuario">
       <wsdl:input wsaw:Action="http://tempuri.org/ISWSoap/CrearUsuario" message="tns:ISWSoap_CrearUsuario_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ISWSoap/CrearUsuarioResponse" message="tns:ISWSoap_CrearUsuario_OutputMessage" />
       <wsdl:fault wsaw:Action="http://tempuri.org/ISWSoap/CrearUsuarioRepetidoExceptionFault" name="RepetidoExceptionFault" message="tns:ISWSoap_CrearUsuario_RepetidoExceptionFault_FaultMessage" />
     </wsdl:operation>
+    <wsdl:operation name="CrearSoat">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWSoap/CrearSoat" message="tns:ISWSoap_CrearSoat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWSoap/CrearSoatResponse" message="tns:ISWSoap_CrearSoat_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISWSoap/CrearSoatRepetidoExceptionFault" name="RepetidoExceptionFault" message="tns:ISWSoap_CrearSoat_RepetidoExceptionFault_FaultMessage" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ISWSoap" type="tns:ISWSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="CrearUsuario">
       <soap:operation soapAction="http://tempuri.org/ISWSoap/CrearUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RepetidoExceptionFault">
+        <soap:fault use="literal" name="RepetidoExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CrearSoat">
+      <soap:operation soapAction="http://tempuri.org/ISWSoap/CrearSoat" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

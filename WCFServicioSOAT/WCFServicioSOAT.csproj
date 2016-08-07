@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dominio\RecuperarContrasenaDominio.cs" />
+    <Compile Include="Dominio\SoatDominio.cs" />
     <Compile Include="Dominio\UsuarioDominio.cs" />
     <Compile Include="Errores\RepetidoException.cs" />
     <Compile Include="IRecuperarContrasena.cs" />

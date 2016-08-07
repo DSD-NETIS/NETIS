@@ -84,5 +84,44 @@ namespace WCFServicioREST.Persistencia
             }
             return accesoEncontrado;
         }
+
+        public SoatDominio SoatActivo(string Placa, string FechaInicio)
+        {
+            SoatDominio soatEncontrado = null;
+            string sql = "declare @l_fechaInicio datetime = (select convert(datetime,FechaInicio) from soat where placa = '" + Placa + "')" +
+                          "declare @l_FechaFin datetime = DateAdd(year,1,@l_fechaInicio) " +
+                          "select * from soat where placa = '" + Placa + "' " +
+                          "and CONVERT(DATETIME,'" + FechaInicio + "') between @l_fechaInicio AND @l_FechaFin";
+            using (SqlConnection cn = new SqlConnection(Conexion.cadenaConexion))
+            {
+                cn.Open();
+                using (SqlCommand cmd = new SqlCommand(sql, cn))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            soatEncontrado = new SoatDominio()
+                            {
+                                Placa = (string)reader["Placa"],
+                                Marca = (string)reader["Marca"],
+                                Categoria = (string)reader["Categoria"],
+                                FechaInicio = (string)reader["FechaInicio"],
+                                Contratante = (string)reader["Contratante"],
+                                Año = (int)reader["Año"],
+                                Documento = (string)reader["Documento"],
+                                Modelo = (string)reader["Modelo"],
+                                NroAsientos = (int)reader["NroAsientos"],
+                                Direccion = (string)reader["Direccion"],
+                                UsoDiario = (string)reader["UsoDiario"],
+                                NroSerie = (string)reader["NroSerie"],
+
+                            };
+                        }
+                    }
+                }
+            }
+            return soatEncontrado;
+        }
     }
 }

@@ -199,6 +199,227 @@ namespace NetisTest.SWSoap {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SoatDominio", Namespace="http://schemas.datacontract.org/2004/07/WCFServicioSOAT.Dominio")]
+    [System.SerializableAttribute()]
+    public partial class SoatDominio : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int AñoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CategoriaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ContratanteField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DireccionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DocumentoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FechaInicioField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MarcaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ModeloField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int NroAsientosField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NroSerieField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PlacaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UsoDiarioField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Año {
+            get {
+                return this.AñoField;
+            }
+            set {
+                if ((this.AñoField.Equals(value) != true)) {
+                    this.AñoField = value;
+                    this.RaisePropertyChanged("Año");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Categoria {
+            get {
+                return this.CategoriaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CategoriaField, value) != true)) {
+                    this.CategoriaField = value;
+                    this.RaisePropertyChanged("Categoria");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Contratante {
+            get {
+                return this.ContratanteField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ContratanteField, value) != true)) {
+                    this.ContratanteField = value;
+                    this.RaisePropertyChanged("Contratante");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Direccion {
+            get {
+                return this.DireccionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DireccionField, value) != true)) {
+                    this.DireccionField = value;
+                    this.RaisePropertyChanged("Direccion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Documento {
+            get {
+                return this.DocumentoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DocumentoField, value) != true)) {
+                    this.DocumentoField = value;
+                    this.RaisePropertyChanged("Documento");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FechaInicio {
+            get {
+                return this.FechaInicioField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FechaInicioField, value) != true)) {
+                    this.FechaInicioField = value;
+                    this.RaisePropertyChanged("FechaInicio");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Marca {
+            get {
+                return this.MarcaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MarcaField, value) != true)) {
+                    this.MarcaField = value;
+                    this.RaisePropertyChanged("Marca");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Modelo {
+            get {
+                return this.ModeloField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ModeloField, value) != true)) {
+                    this.ModeloField = value;
+                    this.RaisePropertyChanged("Modelo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int NroAsientos {
+            get {
+                return this.NroAsientosField;
+            }
+            set {
+                if ((this.NroAsientosField.Equals(value) != true)) {
+                    this.NroAsientosField = value;
+                    this.RaisePropertyChanged("NroAsientos");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string NroSerie {
+            get {
+                return this.NroSerieField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NroSerieField, value) != true)) {
+                    this.NroSerieField = value;
+                    this.RaisePropertyChanged("NroSerie");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Placa {
+            get {
+                return this.PlacaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PlacaField, value) != true)) {
+                    this.PlacaField = value;
+                    this.RaisePropertyChanged("Placa");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string UsoDiario {
+            get {
+                return this.UsoDiarioField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UsoDiarioField, value) != true)) {
+                    this.UsoDiarioField = value;
+                    this.RaisePropertyChanged("UsoDiario");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="SWSoap.ISWSoap")]
     public interface ISWSoap {
@@ -209,6 +430,13 @@ namespace NetisTest.SWSoap {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISWSoap/CrearUsuario", ReplyAction="http://tempuri.org/ISWSoap/CrearUsuarioResponse")]
         System.Threading.Tasks.Task<NetisTest.SWSoap.UsuarioDominio> CrearUsuarioAsync(NetisTest.SWSoap.UsuarioDominio crearUsuario);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISWSoap/CrearSoat", ReplyAction="http://tempuri.org/ISWSoap/CrearSoatResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(NetisTest.SWSoap.RepetidoException), Action="http://tempuri.org/ISWSoap/CrearSoatRepetidoExceptionFault", Name="RepetidoException", Namespace="http://schemas.datacontract.org/2004/07/WCFServicioSOAT.Errores")]
+        NetisTest.SWSoap.SoatDominio CrearSoat([System.ServiceModel.MessageParameterAttribute(Name="crearSoat")] NetisTest.SWSoap.SoatDominio crearSoat1);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISWSoap/CrearSoat", ReplyAction="http://tempuri.org/ISWSoap/CrearSoatResponse")]
+        System.Threading.Tasks.Task<NetisTest.SWSoap.SoatDominio> CrearSoatAsync(NetisTest.SWSoap.SoatDominio crearSoat);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -244,6 +472,14 @@ namespace NetisTest.SWSoap {
         
         public System.Threading.Tasks.Task<NetisTest.SWSoap.UsuarioDominio> CrearUsuarioAsync(NetisTest.SWSoap.UsuarioDominio crearUsuario) {
             return base.Channel.CrearUsuarioAsync(crearUsuario);
+        }
+        
+        public NetisTest.SWSoap.SoatDominio CrearSoat(NetisTest.SWSoap.SoatDominio crearSoat1) {
+            return base.Channel.CrearSoat(crearSoat1);
+        }
+        
+        public System.Threading.Tasks.Task<NetisTest.SWSoap.SoatDominio> CrearSoatAsync(NetisTest.SWSoap.SoatDominio crearSoat) {
+            return base.Channel.CrearSoatAsync(crearSoat);
         }
     }
 }

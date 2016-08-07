@@ -28,7 +28,7 @@
         </div>
         <div>
             <div>Placa: </div>
-            <div><input type="text" placeholder="Ingrese su Placa" id="txtPlaca" maxlength="6" runat="server"/></div>
+            <div><input type="text" placeholder="Ingrese su Placa" id="txtPlaca" maxlength="7" runat="server"/></div>
         </div>
         <div>
             <div>Fecha Inicio: </div>
@@ -36,7 +36,7 @@
         </div>
         <div>
             <div>Categoria/Clase: </div>
-            <div><input type="text" placeholder="Ingrese su Contraseña" id="txtCategoria" runat="server" /></div>
+            <div><input type="text" placeholder="Ingrese la clase" id="txtCategoria" runat="server" /></div>
         </div>
         <div>
             <div>Contratante: </div>
@@ -73,7 +73,7 @@
         </div>
         <div>
             <div>Dirección: </div>
-            <div><input type="number" placeholder="Ingrese la dirección" id="txtDireccion" runat="server" /></div>
+            <div><input type="text" placeholder="Ingrese la dirección" id="txtDireccion" runat="server" /></div>
         </div>
         <div>
             <div>Uso del Vehículo: </div>
@@ -91,10 +91,10 @@
         </div>
         <div>
             <div>
-                <asp:Button ID="btnGuardar" runat="server" Text="Submit" OnClientClick="if(txtPlaca.value == ''){ alert('Por favor ingrese la placa'); return false; } 
+                <asp:Button ID="btnGuardar" runat="server" Text="Submit" OnClick="btnGuardar_Click" OnClientClick="if(txtPlaca.value == ''){ alert('Por favor ingrese la placa'); return false; } 
                     if(txtContratante.value == ''){ alert('Por favor ingrese el contratante'); return false; } if(txtDocumento.value == ''){ alert('Por favor ingrese el DNI/RUC'); return false; }
                     if(txtCategoria.value == ''){ alert('Por favor ingrese la categoría/clase'); return false; } if(txtNroAsientos.value == ''){ alert('Por favor ingrese el numero de asientos'); return false; }
-                    if(txtNroSerie.value == ''){ alert('Por favor ingrese el numero de serie'); return false; } if(txtDireccion.value == ''){ alert('Por favor ingrese la direccion'); return false; } alert('Se registraron los datos con éxito'); window.close();" />
+                    if(txtNroSerie.value == ''){ alert('Por favor ingrese el numero de serie'); return false; } if(txtDireccion.value == ''){ alert('Por favor ingrese la direccion'); return false; } " />
                 <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" OnClientClick="window.close();" />
             </div>
         </div>

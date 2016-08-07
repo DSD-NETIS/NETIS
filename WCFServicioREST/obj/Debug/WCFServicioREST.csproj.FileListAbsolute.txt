@@ -2,3 +2,4 @@ C:\Users\EDER\Desktop\NETIS\WCFServicioREST\bin\WCFServicioREST.dll
 C:\Users\EDER\Desktop\NETIS\WCFServicioREST\bin\WCFServicioREST.pdb
 C:\Users\EDER\Desktop\NETIS\WCFServicioREST\obj\Debug\WCFServicioREST.dll
 C:\Users\EDER\Desktop\NETIS\WCFServicioREST\obj\Debug\WCFServicioREST.pdb
+C:\Users\EDER\Desktop\NETIS\WCFServicioREST\obj\Debug\WCFServicioREST.csprojResolveAssemblyReference.cache

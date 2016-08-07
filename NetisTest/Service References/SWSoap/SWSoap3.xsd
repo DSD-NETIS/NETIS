@@ -11,4 +11,21 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="UsuarioDominio" nillable="true" type="tns:UsuarioDominio" />
+  <xs:complexType name="SoatDominio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Año" type="xs:int" />
+      <xs:element minOccurs="0" name="Categoria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Contratante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaInicio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Marca" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Modelo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NroAsientos" type="xs:int" />
+      <xs:element minOccurs="0" name="NroSerie" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Placa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsoDiario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SoatDominio" nillable="true" type="tns:SoatDominio" />
 </xs:schema>

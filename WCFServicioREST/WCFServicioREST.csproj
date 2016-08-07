@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dominio\AccesoPerfilDominio.cs" />
+    <Compile Include="Dominio\SoatDominio.cs" />
     <Compile Include="Dominio\UsuarioDominio.cs" />
     <Compile Include="IUsuario.cs" />
     <Compile Include="Persistencia\Conexion.cs" />

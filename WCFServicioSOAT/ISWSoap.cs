@@ -13,6 +13,12 @@ namespace WCFServicioSOAT
     [ServiceContract]
     public interface ISWSoap
     {
-       
+        [FaultContract(typeof(RepetidoException))]
+        [OperationContract]
+        UsuarioDominio CrearUsuario(UsuarioDominio crearUsuario);
+
+        [FaultContract(typeof(RepetidoException))]
+        [OperationContract]
+        SoatDominio CrearSoat(SoatDominio crearSoat);
     }
 }

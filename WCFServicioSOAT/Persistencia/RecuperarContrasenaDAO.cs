@@ -129,6 +129,109 @@ namespace WCFServicioSOAT.Persistencia
             }
             return usuarioEncontrado;
         }
+
+        public SoatDominio CrearSoat(SoatDominio crearSoat)
+        {
+            SoatDominio soatEncontrar = null;
+            string sql = "INSERT INTO SOAT ([Placa],[Marca],[Categoria],[FechaInicio],[Contratante],[Año],[Documento],[Modelo],[NroAsientos],[Direccion],[UsoDiario],[NroSerie]) VALUES(@Placa,@Marca,@Categoria,@FechaInicio,@Contratante,@Año,@Documento,@Modelo,@NroAsientos,@Direccion,@UsoDiario,@NroSerie)";
+            using (SqlConnection cn = new SqlConnection(Conexion.cadenaConexion))
+            {
+                cn.Open();
+                using (SqlCommand cmd = new SqlCommand(sql, cn))
+                {
+                    cmd.Parameters.Add(new SqlParameter("@Placa", crearSoat.Placa));
+                    cmd.Parameters.Add(new SqlParameter("@Marca", crearSoat.Marca));
+                    cmd.Parameters.Add(new SqlParameter("@Categoria", crearSoat.Categoria));
+                    cmd.Parameters.Add(new SqlParameter("@FechaInicio", crearSoat.FechaInicio));
+                    cmd.Parameters.Add(new SqlParameter("@Contratante", crearSoat.Contratante));
+                    cmd.Parameters.Add(new SqlParameter("@Año", crearSoat.Año));
+                    cmd.Parameters.Add(new SqlParameter("@Documento", crearSoat.Documento));
+                    cmd.Parameters.Add(new SqlParameter("@Modelo", crearSoat.Modelo));
+                    cmd.Parameters.Add(new SqlParameter("@NroAsientos", crearSoat.NroAsientos));
+                    cmd.Parameters.Add(new SqlParameter("@Direccion", crearSoat.Direccion));
+                    cmd.Parameters.Add(new SqlParameter("@UsoDiario", crearSoat.UsoDiario));
+                    cmd.Parameters.Add(new SqlParameter("@NroSerie", crearSoat.NroSerie));
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            soatEncontrar = ObtenerSoat(crearSoat.Placa);
+            return soatEncontrar;
+        }
+
+        public SoatDominio ObtenerSoat(string stPlaca)
+        {
+            SoatDominio soatEncontrado = null;
+            string sql = "SELECT * FROM Soat WHERE placa ='" + stPlaca+ "'";
+            using (SqlConnection cn = new SqlConnection(Conexion.cadenaConexion))
+            {
+                cn.Open();
+                using (SqlCommand cmd = new SqlCommand(sql, cn))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            soatEncontrado = new SoatDominio()
+                            {
+                                Placa = (string)reader["Placa"],
+                                Marca = (string)reader["Marca"],
+                                Categoria = (string)reader["Categoria"],
+                                FechaInicio = (string)reader["FechaInicio"],
+                                Contratante = (string)reader["Contratante"],
+                                Año = (int)reader["Año"],
+                                Documento = (string)reader["Documento"],
+                                Modelo = (string)reader["Modelo"],
+                                NroAsientos = (int)reader["NroAsientos"],
+                                Direccion = (string)reader["Direccion"],
+                                UsoDiario = (string)reader["UsoDiario"],
+                                NroSerie = (string)reader["NroSerie"],
+
+                            };
+                        }
+                    }
+                }
+            }
+            return soatEncontrado;
+        }
+
+        public SoatDominio SoatActivo(string Placa,string FechaInicio)
+        {
+            SoatDominio soatEncontrado = null;
+            string sql = "declare @l_fechaInicio datetime = (select convert(datetime,FechaInicio) from soat where placa = 'D2F-896' ) " +
+                          "declare @l_FechaFin datetime = DateAdd(year,1,@l_fechaInicio) " +
+                          "select * from soat where placa = 'D2F-896' " +
+                          "and CONVERT(DATETIME,FechaInicio) between @l_fechaInicio AND @l_FechaFin";
+            using (SqlConnection cn = new SqlConnection(Conexion.cadenaConexion))
+            {
+                cn.Open();
+                using (SqlCommand cmd = new SqlCommand(sql, cn))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            soatEncontrado = new SoatDominio()
+                            {
+                                Placa = (string)reader["Placa"],
+                                Marca = (string)reader["Marca"],
+                                Categoria = (string)reader["Categoria"],
+                                FechaInicio = (string)reader["FechaInicio"],
+                                Contratante = (string)reader["Contratante"],
+                                Año = (int)reader["Año"],
+                                Documento = (string)reader["Documento"],
+                                Modelo = (string)reader["Modelo"],
+                                NroAsientos = (int)reader["NroAsientos"],
+                                Direccion = (string)reader["Direccion"],
+                                UsoDiario = (string)reader["UsoDiario"],
+                                NroSerie = (string)reader["NroSerie"],
+
+                            };
+                        }
+                    }
+                }
+            }
+            return soatEncontrado;
+        }
          
     }
 }

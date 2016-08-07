@@ -80,6 +80,9 @@
     <None Include="Service References\SWRecuperarContrasena\RecuperarContrasena2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\SWSoap\NetisTest.SWSoap.SoatDominio.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\SWSoap\NetisTest.SWSoap.UsuarioDominio.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
