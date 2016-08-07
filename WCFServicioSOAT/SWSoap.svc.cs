@@ -15,22 +15,5 @@ namespace WCFServicioSOAT
     public class SWSoap : ISWSoap
     {
 
-        RecuperarContrasenaDAO dao = new RecuperarContrasenaDAO();
-
-        public UsuarioDominio CrearUsuario(UsuarioDominio crearUsuario)
-        {
-            UsuarioDominio usuarioEncontrado = null;
-            usuarioEncontrado = dao.Obtener(crearUsuario.Correo);
-            if (usuarioEncontrado != null)
-            {
-                throw new FaultException<RepetidoException>(new RepetidoException
-                {
-                    Codigo = "101",
-                    Descripcion = "El Usuario ya existe"
-                }, new FaultReason("Error al intentar la creación."));
-            }
-
-            return dao.CrearUsuario(crearUsuario);
-        }
     }
 }

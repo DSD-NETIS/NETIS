@@ -21,13 +21,6 @@ namespace WCFServicioREST
         [WebInvoke(Method = "GET", UriTemplate = "Usuario/{Correo}", ResponseFormat = WebMessageFormat.Json)]
         UsuarioDominio Obtener(string Correo);
 
-        [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "Usuario/IdPerfil={IdPerfil}", ResponseFormat = WebMessageFormat.Json)]
-        AccesoPerfilDominio ObtenerAcceso(string IdPerfil);
-
-        [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "Usuario/Contrasena={Contrasena}", ResponseFormat = WebMessageFormat.Json)]
-        bool CompararContrasena(string Contrasena);
 
     }
 }
