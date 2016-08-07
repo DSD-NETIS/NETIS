@@ -20,6 +20,10 @@
             <div><input type="text" placeholder="Ingrese su Apellido" id="txtApellido" runat="server" /></div>
         </div>
         <div>
+            <div>Dni :</div>
+            <div><input type="text" placeholder="Ingrese su Dni" id="txtDni" runat="server" /></div>
+        </div>
+        <div>
             <div>Correo :</div>
             <div><input type="email" placeholder="Ingrese su Correo" id="txtEmail" runat="server" /></div>
         </div>
@@ -33,7 +37,7 @@
         </div>
         <div>
             <div>
-                <asp:Button ID="btnEnviar" runat="server" Text="Enviar" OnClientClick="if(txtEmail.value == 'admin@netis.com'){ alert('El Correo ya fue registrado'); return false; } alert('Se registraron los datos con éxito'); window.close();" />
+                <asp:Button ID="btnEnviar" runat="server" Text="Enviar" OnClick="btnEnviar_Click" />
                 <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" OnClientClick="window.close();" />
             </div>
         </div>

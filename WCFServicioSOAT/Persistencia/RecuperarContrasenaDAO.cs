@@ -31,7 +31,7 @@ namespace WCFServicioSOAT.Persistencia
                 }
             }
             if (result > 0)
-                return "La Contraseña fue enviada al Correo : " + stCorreo;
+                return "La Contraseña cambiada" ;
             else
                 return "Correo es incorrecto";
 
@@ -78,6 +78,57 @@ namespace WCFServicioSOAT.Persistencia
 
             return contrasenaNueva;
         }
-          
+
+        public UsuarioDominio CrearUsuario(UsuarioDominio usuarioCrear)
+        {
+            UsuarioDominio usuarioEncontrar = null;
+            string sql = "INSERT INTO Usuario (IdPerfil,Nombre,Apellido,Dni, Correo,Contraseña) VALUES (@IdPerfil,@Nombre,@Apellido,@Dni,@Correo,@Contraseña)";
+            using (SqlConnection cn = new SqlConnection(Conexion.cadenaConexion))
+            {
+                cn.Open();
+                using (SqlCommand cmd = new SqlCommand(sql, cn))
+                {
+                    cmd.Parameters.Add(new SqlParameter("@IdPerfil", usuarioCrear.IdPerfil));
+                    cmd.Parameters.Add(new SqlParameter("@Nombre", usuarioCrear.Nombre));
+                    cmd.Parameters.Add(new SqlParameter("@Apellido", usuarioCrear.Apellido));
+                    cmd.Parameters.Add(new SqlParameter("@Dni", usuarioCrear.Dni));
+                    cmd.Parameters.Add(new SqlParameter("@Correo", usuarioCrear.Correo));
+                    cmd.Parameters.Add(new SqlParameter("@Contraseña", usuarioCrear.Contraseña));
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            usuarioEncontrar = Obtener(usuarioCrear.Correo);
+            return usuarioEncontrar;
+        }
+
+        public UsuarioDominio Obtener(string stCorreo)
+        {
+            UsuarioDominio usuarioEncontrado = null;
+            string sql = "SELECT * FROM Usuario WHERE correo ='" + stCorreo + "'";
+            using (SqlConnection cn = new SqlConnection(Conexion.cadenaConexion))
+            {
+                cn.Open();
+                using (SqlCommand cmd = new SqlCommand(sql, cn))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            usuarioEncontrado = new UsuarioDominio()
+                            {
+                                IdPerfil = (int)reader["IdPerfil"],
+                                Dni = (string)reader["Dni"],
+                                Nombre = (string)reader["Nombre"],
+                                Apellido = (string)reader["Apellido"],
+                                Correo = (string)reader["Correo"],
+                                Contraseña = (string)reader["Contraseña"]
+                            };
+                        }
+                    }
+                }
+            }
+            return usuarioEncontrado;
+        }
+         
     }
 }

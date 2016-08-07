@@ -7,13 +7,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Sistema SOAT</title>
 </head>
-<body>
-    <form id="form1" runat="server">
-    <h1 style="text-align:center">NETIS - SOAT</h1>
+<body style="background-color:azure;">
+    <form id="form1" runat="server" >
+    <h1 style="text-align:center">NETIS - SOAT1</h1>
     <div>
     </div>
     <div style="text-align:center"><span >Mi SOAT</span></div>
-    <div style="text-align:center">
+    <div style="text-align:center;" >
         <table style="border:1px solid;text-align:center;margin:0px auto">
         <tbody>
             <tr>
@@ -29,7 +29,7 @@
                 <td style="text-align:center"><asp:Button ID="btnIngresar" runat="server" Text="Ingresar" OnClick="btnIngresar_Click" /></td>
             </tr>
             <tr>
-                <td style="text-align:center"> <a href="#" onclick=" var date = new Date(); if(date.getHours() <= 8 || date.getHours() >= 22 ) { alert('Horario no disponible'); } else { window.open('frm_RecuperarContrasena.aspx', 'newwindow', 'width=500, height=450'); return false; } "  >Rescuperar Contraseña</a> </td>
+                <td style="text-align:center"> <a href="#" onclick="window.open('frm_RecuperarContrasena.aspx', 'newwindow', 'width=500, height=450'); return false;"  >Rescuperar Contraseña</a> </td>
             </tr>
         </tbody>
     </table>

@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetisTest", "NetisTest\Neti
 		{75D430D0-7B31-4FCC-9CD7-DAA277F32D65} = {75D430D0-7B31-4FCC-9CD7-DAA277F32D65}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServicioREST", "WCFServicioREST\WCFServicioREST.csproj", "{AD32F26D-D77F-44C2-806A-4E51CF391FE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{E75E4751-FE79-4306-8BB1-720BFF8362AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E75E4751-FE79-4306-8BB1-720BFF8362AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E75E4751-FE79-4306-8BB1-720BFF8362AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD32F26D-D77F-44C2-806A-4E51CF391FE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD32F26D-D77F-44C2-806A-4E51CF391FE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD32F26D-D77F-44C2-806A-4E51CF391FE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD32F26D-D77F-44C2-806A-4E51CF391FE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
