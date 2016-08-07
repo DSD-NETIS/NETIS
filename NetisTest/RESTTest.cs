@@ -42,7 +42,18 @@ namespace NetisTest
             Assert.AreEqual(1, accesoPerfil.IdPerfil);
         }
 
-        
+        [TestMethod]
+        public void TestCompararContrasena()
+        {
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://localhost:5830/Usuario.svc/Usuario/Contrasena=A12338");
+            HttpWebResponse res = null;
+            req.ContentType = "application/json";
+            res = (HttpWebResponse)req.GetResponse();
+            res = req.GetResponse() as HttpWebResponse;
+            StreamReader reader = new StreamReader(res.GetResponseStream());
+            string clienteJson = reader.ReadToEnd();
+            Assert.AreEqual("true", clienteJson);
+        }
 
 
 

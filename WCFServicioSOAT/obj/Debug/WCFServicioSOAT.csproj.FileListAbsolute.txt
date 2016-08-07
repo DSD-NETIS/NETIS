@@ -2,9 +2,3 @@ C:\Users\EDER\Desktop\NETIS\WCFServicioSOAT\bin\WCFServicioSOAT.dll
 C:\Users\EDER\Desktop\NETIS\WCFServicioSOAT\bin\WCFServicioSOAT.pdb
 C:\Users\EDER\Desktop\NETIS\WCFServicioSOAT\obj\Debug\WCFServicioSOAT.dll
 C:\Users\EDER\Desktop\NETIS\WCFServicioSOAT\obj\Debug\WCFServicioSOAT.pdb
-D:\UPC\Sistemas Distribuidos\commit\Luis\WCFServicioSOAT\bin\WCFServicioSOAT.dll.config
-D:\UPC\Sistemas Distribuidos\commit\Luis\WCFServicioSOAT\bin\WCFServicioSOAT.dll
-D:\UPC\Sistemas Distribuidos\commit\Luis\WCFServicioSOAT\bin\WCFServicioSOAT.pdb
-D:\UPC\Sistemas Distribuidos\commit\Luis\WCFServicioSOAT\obj\Debug\WCFServicioSOAT.csprojResolveAssemblyReference.cache
-D:\UPC\Sistemas Distribuidos\commit\Luis\WCFServicioSOAT\obj\Debug\WCFServicioSOAT.dll
-D:\UPC\Sistemas Distribuidos\commit\Luis\WCFServicioSOAT\obj\Debug\WCFServicioSOAT.pdb

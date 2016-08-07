@@ -18,6 +18,14 @@ namespace WCFServicioREST
     {
         private UsuarioDAO dao = new UsuarioDAO();
 
+        //public UsuarioDominio Crear(UsuarioDominio usuarioCrear)
+        //{
+        //    //if ("jperez@gmail.com".Equals(usuarioCrear.Nombre))
+        //    //{
+        //    //    throw new WebFaultException<string>("Este correo ya existe.", HttpStatusCode.InternalServerError);
+        //    //}
+        //    return dao.Crear(usuarioCrear);
+        //}
 
         public UsuarioDominio Obtener(string Correo)
         {
@@ -29,6 +37,22 @@ namespace WCFServicioREST
             return dao.ObtenerAcceso(IdPerfil);
         }
 
-       
+        public bool CompararContrasena(string Contrasena)
+        {
+            bool Correcto = false;
+            string stComprar = @"[A-ZÑ\s]";
+            
+            Match match = Regex.Match(Contrasena.Substring(0,1),stComprar);
+            if (match.Success)
+            {
+                Correcto = true;
+            }
+            return Correcto;
+        }
+
+        public UsuarioDominio Traer(string Correo)
+        {
+            return dao.Traer(Correo);
+        }
     }
 }

@@ -2,8 +2,3 @@ C:\Users\EDER\Desktop\NETIS\WCFServicioREST\bin\WCFServicioREST.dll
 C:\Users\EDER\Desktop\NETIS\WCFServicioREST\bin\WCFServicioREST.pdb
 C:\Users\EDER\Desktop\NETIS\WCFServicioREST\obj\Debug\WCFServicioREST.dll
 C:\Users\EDER\Desktop\NETIS\WCFServicioREST\obj\Debug\WCFServicioREST.pdb
-D:\UPC\Sistemas Distribuidos\commit\Luis\WCFServicioREST\bin\WCFServicioREST.dll.config
-D:\UPC\Sistemas Distribuidos\commit\Luis\WCFServicioREST\bin\WCFServicioREST.dll
-D:\UPC\Sistemas Distribuidos\commit\Luis\WCFServicioREST\bin\WCFServicioREST.pdb
-D:\UPC\Sistemas Distribuidos\commit\Luis\WCFServicioREST\obj\Debug\WCFServicioREST.dll
-D:\UPC\Sistemas Distribuidos\commit\Luis\WCFServicioREST\obj\Debug\WCFServicioREST.pdb
